@@ -7,7 +7,7 @@
     <div class="results" v-if="results">
       <div v-for="result in results" class="img-result">
         <img v-bind:src="result.links[0].href" />
-        <p>{{result.data[0].title}}</p>
+        <p>{{result.data[0].title.substring(0,80)}}</p>
       </div>
     </div>
   </div>
